@@ -2,11 +2,23 @@
 <html lang="en">
     <head>
         <title>Login page</title>
+
+        <script>
+            function showSignup(){
+                document.getElementById("signupForm").style.display = "block";
+                document.getElementById("loginForm").style.display = "none";
+            }
+            function showLogin(){
+                document.getElementById("loginForm").style.display = "block";
+                document.getElementById("signupForm").style.display = "none";
+            }
+        </script>
+
     </head>
     <body>
-    <h1>Login</h1>
 
     <form id="loginForm">
+        <h1>Login</h1>
         <label for="username">Username: </label>
         <input type="text" id="username" name="username">
         <br>
@@ -14,6 +26,19 @@
         <input type="password" id="password" name="password">
         <br>
         <input type="button" value="Login" onclick="checkLogin()">
+        <input type="button" value="Signup" onclick="showSignup()">
+    </form>
+
+    <form id="signupForm" style="display:none">
+        <h1>Sign up</h1>
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="button" value="Submit" onclick="checkSignup()">
+        <input type="button" value="Login" onclick="showLogin()">
     </form>
 
     </body>
