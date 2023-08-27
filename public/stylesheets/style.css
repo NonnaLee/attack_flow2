@@ -48,6 +48,47 @@ nav button:hover {
     float: right;
 }
 
+#fileUploadOverlay {
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#fileUploadWindow {
+    position: fixed;
+    background-color: #ccd3dd;
+    margin: auto;
+    padding-top: 20px;
+    border: 1px solid #888;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+#fileUploadWindowCenter {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#fileUploadText {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #33303a;
+    height: 30px;
+}
+
 a {
     color: #00B7FF;
   }
