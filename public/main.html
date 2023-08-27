@@ -11,7 +11,7 @@
             <nav>
                 <a href="login.html#signupForm">Sign Up</a>
                 <a href="login.html#loginForm">Login</a>
-                <a href="#">Upload</a>
+                <a href="#" onclick="fileUploadOpen()">Upload</a>
 
                <div class="search-bar">
                     <form>
@@ -21,6 +21,37 @@
                 </div>
             </nav>
         </header>
+
+
+
+        <div id="fileUploadOverlay" onclick="fileUploadClose()">
+            <div id="fileUploadWindow">
+
+                <div id="fileUploadText">
+                    Upload an Incident Report Document
+                </div>
+
+                <div id="fileUploadWindowCenter">
+                    <form action="/main.html">
+                        <input type="file" id="fileUpload" name="filename" accept=".docx,.pdf">
+                        <input type="submit">
+                    </form>
+                </div>
+
+            </div>
+        <div>
+
+
+
+        <script>
+            function fileUploadOpen() {
+                document.getElementById("fileUploadOverlay").style.display = "block";
+            }
+
+            function fileUploadClose() {
+                document.getElementById("fileUploadOverlay").style.display = "none";
+            }
+        </script>
 
     </body>
 
