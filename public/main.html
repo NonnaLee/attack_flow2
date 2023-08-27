@@ -7,6 +7,7 @@
     </head>
     <body>
 
+        <!-- Navigation bar: Contains user options such as SIGN UP and LOGIN -->
         <header>
             <nav>
                 <a href="login.html#signupForm">Sign Up</a>
@@ -23,7 +24,7 @@
         </header>
 
 
-
+        <!-- The FILE UPLOAD window pop-up. Appears after clicking the FILE UPLOAD button -->
         <div id="fileUploadOverlay" onclick="fileUploadClose()">
             <div id="fileUploadWindow">
 
@@ -42,7 +43,7 @@
         <div>
 
 
-
+        <!-- ------ SCRIPTS ------ -->
         <script>
             function fileUploadOpen() {
                 document.getElementById("fileUploadOverlay").style.display = "block";
