@@ -35,7 +35,7 @@
                 <div id="fileUploadWindowCenter">
                     <form action="/main.html">
                         <input type="file" id="fileUpload" name="filename" accept=".docx,.pdf">
-                        <input type="submit">
+                        <input type="submit" id="fileSubmit">
                     </form>
                 </div>
 
@@ -54,6 +54,13 @@
             popupContainer.addEventListener('click', (event) => {
                 if (event.target === popupContainer) {
                     popupContainer.style.display = "none";
+                }
+            });
+
+            const submitButton = document.getElementById("fileSubmit");
+            submitButton.addEventListener('click', (event) => {
+                if (document.getElementById("fileUpload").files.length == 0) {
+                    event.preventDefault();
                 }
             });
             // End of pop-up close script
