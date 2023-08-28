@@ -89,6 +89,22 @@ nav button:hover {
     height: 30px;
 }
 
+#main h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+#main p {
+    font-size: 20px;
+    text-align: center;
+}
+#main .search-bar {
+    float: none;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
 a {
     color: #00B7FF;
   }
