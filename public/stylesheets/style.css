@@ -98,11 +98,60 @@ nav button:hover {
     font-size: 20px;
     text-align: center;
 }
+
 #main .search-bar {
     float: none;
     position: relative;
     width: fit-content;
     margin: auto;
+}
+
+#main input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    margin-top: 8px;
+    border: none;
+    background-color: #edf2f2;
+}
+
+#main button {
+    float: right;
+    padding: 3.5px 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    background-color: #ccd3dd;
+}
+
+#main button:hover {
+    background-color: #a6b3cc;
+}
+
+#main .uploadButton {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    border: none;
+    margin: auto;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #384bff;
+    color: white;
+}
+
+#main .uploadButton:hover{
+    background-color: #2b93ff;
+}
+
+#main .center {
+    margin: auto;
+    width: 60%;
+    padding: 16px;
 }
 
 a {
