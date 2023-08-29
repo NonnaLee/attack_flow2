@@ -25,7 +25,7 @@ router.get('/', async function (req, res, next) { // async added here as await c
     //console.log('Mongo Test: Found documents =>', results);
     // const collectionOther = db.collection('other');
     // await collectionOther.insertOne({ "test": 55 });
-    // res.send('Connected successfully to MongoDB');
+    res.send('Connected successfully to MongoDB');
 });
 
 module.exports = router;
