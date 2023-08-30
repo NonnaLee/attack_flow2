@@ -111,4 +111,10 @@ dist
 # VSCode configs
 .vscode/
 
+# Visual Studio
 .vs/
+/bin/Microsoft.NodejsTools.WebRole.dll
+/obj
+*.njsproj
+*.njsproj.user
+*.sln
