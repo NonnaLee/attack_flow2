@@ -98,6 +98,7 @@ nav button:hover {
     font-size: 20px;
     text-align: center;
 }
+
 #main .search-bar {
     float: none;
     position: relative;
@@ -105,6 +106,132 @@ nav button:hover {
     margin: auto;
 }
 
+#main input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    margin-top: 8px;
+    border: none;
+    background-color: #edf2f2;
+}
+
+#main button {
+    float: right;
+    padding: 3.5px 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    background-color: #ccd3dd;
+}
+
+#main button:hover {
+    background-color: #a6b3cc;
+}
+
+#main .uploadButton {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    border: none;
+    margin: auto;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #384bff;
+    color: white;
+}
+
+#main .uploadButton:hover{
+    background-color: #2b93ff;
+}
+
+#main .center {
+    margin: auto;
+    width: 60%;
+    padding: 16px;
+}
+
 a {
     color: #00B7FF;
   }
+
+
+
+/* login HTML */
+.loginbody{
+    /* background-color: #223c64; */
+    background-color: #fbfbfb;
+    font-family: sans-serif;
+}
+.loginbody label{
+    display: inline-block;
+    width: 70px;
+}
+
+.form-box{
+    /* background-color: #75a6ef; */
+    width: 380px;   
+    height: 360px; 
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(209, 215, 227);
+    border-width: 1px;
+    box-shadow: 7px 2px 5px rgb(108, 107, 107);
+    position: absolute;
+    top:50%;
+    left:50%; 
+    transform: translate(-50%, -50%);   
+    text-align: center;
+}
+.button{
+    width: 120px;
+    min-height: 20px;
+    display: block;   
+    font-size: 15px;   
+    line-height: normal;
+    border-radius: 20px;   
+    margin: 10px;
+    background-color: #4a77d4;   
+    color: #fff;   
+    display:inline-block
+}
+.input_style{
+    width: 170px;   
+    min-height: 20px;
+    margin: 15px auto;
+    display: inline-block;
+    font-size: 15px;  
+    transition: 0.3s;
+}
+#loginForm {
+    position: absolute;
+    width: 300px;   
+    height: 350px; 
+    top: 50%;   
+    left:50%; 
+    transform: translate(-50%, -50%);   
+    text-align: center;
+}
+#loginBar{
+    position: absolute;
+}
+#signupForm{
+    position: absolute;
+    width: 300px;   
+    height: 350px; 
+    top: 50%;   
+    left:50%; 
+    transform: translate(-50%, -50%);   
+    text-align: center;
+}
+#loginBar{
+    position: absolute;
+    /* background-color: #f3f4f5;    */
+    width: 300px;   
+    height: 70px; 
+    /* /* border-style: solid;
+    border-color: rgb(209, 215, 227); */
+}
