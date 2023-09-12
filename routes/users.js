@@ -1,9 +1,22 @@
 var express = require('express');
 var router = express.Router();
+const bcrypt = require("bcrypt")
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.post('/loginAuth', (req, res) => {
+    // TODO: login logic server side
+    const user = req.body.user
+    const pl_pwd = req.body.pwd
+
+    res.send("working")
+});
+
+router.post('/signupAuth', (req, res) => {
+    // TODO: signup logic server side
+    const user = req.body.user
+    const pl_pwd = req.body.pwd
+
+    res.send("working")
 });
 
 module.exports = router;
