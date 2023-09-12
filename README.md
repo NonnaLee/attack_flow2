@@ -19,6 +19,10 @@ download here "https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.0-s
 4. go to http://localhost:3000/mongo_TEST if you see "Connected successfully to MongoDB", you have set the database up successful.
 
 # Routes
+## /home
+http://localhost:3000/home
+Main site page
+
 ## /download 
 http://localhost:3000/download
 download the latest file is stored in database collection called IncidentReportFile
