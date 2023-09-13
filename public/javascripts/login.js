@@ -44,7 +44,7 @@ function checkSignup() {
     let req = new XMLHttpRequest();
     const params = `user=${pl_info.user}&pwd=${pl_info.pwd}`; // set data to be sent
 
-    req.open('POST', '//localhost:3000/users/signupnAuth', true); // open http request to server
+    req.open('POST', '//localhost:3000/users/signupAuth', true); // open http request to server
 
     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); // set headers for proper encoding (later date)
 
